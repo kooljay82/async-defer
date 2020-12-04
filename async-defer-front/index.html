@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASYNC DEFER TESTBED</title>
+  <script src="http://localhost:8080/index.js"></script>
+  <script src="http://localhost:8080/async.js" async></script>
+  <script src="http://localhost:8080/defer.js" defer></script>
+  <script src="http://localhost:8080/default.js"></script>
+  <script>
+    h('INLINE / head', '#666');
+  </script>
+</head>
+<body>
+  <script>
+    h('INLINE / body', '#555');
+  </script>
+  <header>This is header</header>
+  <script>
+    h('INLINE / after header', '#444');
+  </script>
+  <section>This is section</section>
+  <script>
+    h('INLINE / after section', '#333');
+  </script>
+  <footer>This is footer</footer>
+  <script>
+    h('INLINE / after footer', '#222');
+  </script>
+</body>
+</html>

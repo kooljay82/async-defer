@@ -1,0 +1,16 @@
+{
+  "name": "testbed",
+  "version": "1.0.0",
+  "description": "for test async defer",
+  "scripts": {
+    "start:front": "npx http-server ./async-defer-front -p 8000",
+    "start:cdn": "npx http-server ./async-defer-cdn -p 8080",
+    "start": "concurrently \"npm run start:front\" \"npm run start:cdn\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}

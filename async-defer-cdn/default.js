@@ -1,0 +1,1 @@
+h('DEFAULT', 'blue');
