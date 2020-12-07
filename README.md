@@ -24,13 +24,10 @@ default / no options
  
 ## What I Expected
 
-1) stop parsing and excute index.js (means global function is ready to use)
-
-2) excute async.js immediately after async.js loaded and at that point, when \<body\> has not parsed, can't append 'red' \<div\>
-
-3) defer.js will excute at last time
-
-4) stop parsing and excute default.js (means can not append 'blue' \<div\>)
+1. stop parsing and excute index.js (means global function is ready to use)
+2. excute async.js immediately after async.js loaded and at that point, when \<body\> has not parsed, can't append 'red' \<div\>
+3. defer.js will excute at last time
+4. stop parsing and excute default.js (means can not append 'blue' \<div\>)
 
 # Result
  
