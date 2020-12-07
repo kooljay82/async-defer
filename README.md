@@ -29,15 +29,18 @@
 3. defer.js will excute at last time
 4. stop parsing and excute default.js (means can not append 'blue' \<div\>)
 
-# Result
+## Result
  
 **FF**
+
 ASYNC -> DEFAULT -> INLINE / head -> INLINE / body -> INLINE / after header -> INLINE / after section -> INLINE / after footer -> DEFER -> DOMContentLoaded -> load
 
 **Safari**
+
 DEFAULT -> INLINE / head -> INLINE / body –> INLINE / after header -> INLINE / after section –> INLINE / after footer -> DEFER -> DOMContentLoaded –> ASYNC -> load
 
 **Chrome**
+
 DEFAULT -> INLINE / head -> INLINE / body -> INLINE / after header -> INLINE / after section -> INLINE / after footer -> ASYNC -> DEFER -> DOMContentLoaded -> load
 
 [FED Front-End-Developer](https://kool-jay.tistory.com/35)
